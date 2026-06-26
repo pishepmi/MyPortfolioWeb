@@ -316,16 +316,15 @@ main {
 \*-----------------------------------*/
 
 .navbar {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background: hsla(240, 1%, 17%, 0.75);
-  backdrop-filter: blur(10px);
-  border: 1px solid hsl(0deg 0.55% 35.49%);
-  border-radius: 12px 12px 0 0;
-  box-shadow: var(--shadow-2);
-  z-index: 5;
+    position: absolute;
+    bottom: auto;
+    top: 0;
+    left: auto;
+    right: 255px; /* <--- INI PENYEBABNYA */
+    width: max-content;
+    border-radius: 0px  0px 20px 20px ;
+    padding: 0 50px;
+    box-shadow: none;
 }
 
 .navbar-list {
