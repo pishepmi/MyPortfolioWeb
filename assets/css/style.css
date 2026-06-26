@@ -1,4 +1,3 @@
-
 /*-----------------------------------*\
   #RESET
 \*-----------------------------------*/
@@ -316,15 +315,17 @@ main {
 \*-----------------------------------*/
 
 .navbar {
-    position: absolute;
-    bottom: auto;
-    top: 0;
-    left: auto;
-    right: 255px; /* <--- INI PENYEBABNYA */
-    width: max-content;
-    border-radius: 0px  0px 20px 20px ;
-    padding: 0 50px;
-    box-shadow: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 255px;
+  width: 100%;
+  background: hsla(240, 1%, 17%, 0.75);
+  backdrop-filter: blur(10px);
+  border: 1px solid hsl(0deg 0.55% 35.49%);
+  border-radius: 12px 12px 0 0;
+  box-shadow: var(--shadow-2);
+  z-index: 5;
 }
 
 .navbar-list {
@@ -719,44 +720,7 @@ main {
   background-color: #e0e0e0;
 }
 
-/*-----------------------------------*\
-  #DASHBOARD
-\*-----------------------------------*/
 
-.dashboard .article-title {
-  margin-bottom: 30px;
-}
-
-/* Mengatasi overlap navbar di layar besar (Desktop) */
-@media (min-width: 1024px) {
-  .dashboard header {
-    margin-top: 40px; 
-  }
-}
-
-.dashboard-content {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-}
-
-.dashboard-item h3 {
-  margin-bottom: 15px;
-  font-size: var(--fs-4);
-  color: hsl(0deg 0% 0%);
-  text-transform: capitalize;
-}
-
-.dashboard-item iframe {
-  width: 100%;
-  border-radius: 16px;
-  box-shadow: var(--shadow-1);
-  transition: var(--transition-1);
-}
-
-.dashboard-item iframe:hover {
-  box-shadow: var(--shadow-2);
-}
 
 
 /*-----------------------------------*\
