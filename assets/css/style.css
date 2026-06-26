@@ -317,8 +317,8 @@ main {
 .navbar {
   position: fixed;
   bottom: 0;
-  left: 0;
-  right: 255px;
+  left: auto;
+  right: 0;
   width: 100%;
   background: hsla(240, 1%, 17%, 0.75);
   backdrop-filter: blur(10px);
