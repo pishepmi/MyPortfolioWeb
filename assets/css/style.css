@@ -315,11 +315,11 @@ main {
 \*-----------------------------------*/
 
 .navbar {
-  position: fixed;
+  position: absolute;
   bottom: 0;
   left: auto;
   right: 0;
-  width: 100%;
+  width: max-content;
   background: hsla(240, 1%, 17%, 0.75);
   backdrop-filter: blur(10px);
   border: 1px solid hsl(0deg 0.55% 35.49%);
@@ -1081,7 +1081,7 @@ figure.project-img {
     bottom: auto;
     top: 0;
     left: auto;
-    right: 255px;
+    right: 0;
     width: max-content;
     border-radius: 0px  0px 20px 20px ;
     padding: 0 50px;
